@@ -1,0 +1,3 @@
+<template name="tips">
+  <view class='tips'  hidden="{{ !visible }}">{{text}}</view>
+</template>

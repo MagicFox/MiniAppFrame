@@ -1,0 +1,42 @@
+<template name="empty-view">
+  <!-- none-tip begin -->
+  <view class="none-tip" wx:if="{{empty.type === 'tip'}}">
+    <image class="none-img" src="../../images/none-tip.png" mode="widthFix"></image>
+    <view class="tip-text">{{empty.tips}}
+    
+      <!-- btn-part begin,带按钮的提示 -->
+      <view wx:if="{{empty.subType === 'add-button'}}" class="tip-btn-part">
+        <view class="tip-text">{{empty.text}}</view>
+        <button class="btn btn-info btn-shadow mt10" bindtap="{{empty.bindtapMethod}}">{{empty.bindtapText}}</button>
+      </view>
+      <!-- btn-part end -->
+
+      <!-- navigator-part begin,带跳转的提示 -->
+      <navigator wx:elif="{{empty.subType === 'navigator'}}" class="tip-go" url="{{empty.navigateUrl}}">
+        {{empty.text}}
+        <span class="color-blue">{{empty.navigateText}}</span>
+      </navigator>
+      <!-- navigator-part end -->
+
+      <!-- tips-part begin -->
+      <view wx:elif="{{empty.subType === 'tips'}}">{{empty.text}}</view>
+      <!-- tips-part end -->
+
+      <!-- view-click-part begin,提示+点击 -->
+      <view wx:else class="tip-go" bindtap="{{empty.bindtapMethod}}">
+        {{empty.text}}
+        <span class="color-blue">{{empty.bindtapText}}</span>
+      </view>
+      <!-- view-click-part end -->
+    </view>
+  </view>
+  <!-- none-tip end -->
+  <!-- more-task begin 多任务提示 -->
+  <view class="more-task" wx:if="{{empty.type === 'button-tip'}}">
+    <view class="tip">{{empty.text}}</view>
+    <button class="btn btn-info" bindtap="{{empty.bindtapMethod}}">{{empty.bindtapText}}</button>
+  </view>
+  <!-- more-task end -->
+
+  <!-- page-none end -->
+</template>

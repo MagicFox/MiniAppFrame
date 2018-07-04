@@ -1,0 +1,30 @@
+.middle_part {
+  flex: 1;
+  display: flex;
+  margin: -100rpx 20rpx 30rpx 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 5rpx 15rpx rgba(0,0,0,.1);
+  background: #fff;
+}
+.middle_part .none-tip {
+  margin-top: 204rpx;
+}
+.middle_part .more-task{
+  margin: 227rpx auto 0 auto;
+  width: 510rpx;
+  text-align: center;
+}
+.middle_part .more-task .tip{
+  margin-bottom: 55rpx;
+  line-height: 45rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+.middle_part .more-task .btn{
+  width: 400rpx;
+}
+.page-none {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
