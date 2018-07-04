@@ -54,7 +54,9 @@
 ## 功能使用
 
 - 网络请求
->在[skyvow的项目](https://github.com/skyvow/wx-extend)基础之上
+在[skyvow的项目](https://github.com/skyvow/wx-extend)基础之上
+
+```
 新增：
     支持统一处理 loading & stop stop refresh & show err message
     可配置多网络域名
@@ -65,6 +67,9 @@
     支持结果返回网络异常、业务处理结果标识
         isNetError:是否网络请求失败
         isBizError:是否业务处理失败
+
+```
+
 ```
 
 master/slave接口服务返回实体不同,配置两个server请求对象于config/config.js:
