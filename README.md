@@ -55,7 +55,6 @@
 
 - 网络请求
 在[skyvow的项目](https://github.com/skyvow/wx-extend)基础之上
-
 ```
 新增：
     支持统一处理 loading & stop stop refresh & show err message
@@ -126,11 +125,6 @@ historyList({id:xxx})
 
 
 ## 上线需知
-一.确认服务器环境及地址
-二.确认车长数据
-三.删除为测试方便而改的配置
-
-
 一.确认服务器环境及地址
     确认修改config/config.js文件配置的内容:
       API_ENVIRONMENT = 'prd' // 正式环境 
